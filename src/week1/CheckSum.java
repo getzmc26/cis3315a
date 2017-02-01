@@ -3,7 +3,7 @@ package week1;
 import java.util.Scanner;
 
 /**
- *
+ * Git update comment test.
  * @author Matt Getz
  */
 public class CheckSum {

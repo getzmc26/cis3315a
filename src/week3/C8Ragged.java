@@ -18,6 +18,7 @@ public class C8Ragged {
         System.out.println("0,0 = " + triangleArray[0][0]);
         System.out.println("0,1 = " + triangleArray[0][1]);
         System.out.println("1,0 = " + triangleArray[1][0]);
+        System.out.println("4,1 = " + triangleArray[4][1]);
         triangleArray[4][1] = 41;
         System.out.println("4,1 = " + triangleArray[4][1]);
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class C8N1 {
 
-    public static void main(String[] args) {
+    public static String colSum() {
         Scanner sc = new Scanner(System.in);
         System.out.print("How many rows?: ");
         int n = sc.nextInt();
@@ -42,5 +42,10 @@ public class C8N1 {
             colNum++;
             System.out.println("\n");
         }    
+    return "";    
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(colSum());
     }
 }

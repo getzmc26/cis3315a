@@ -1,7 +1,7 @@
 package week3;
 
 /**
- * Chess board / game.
+ * Chess board / future game.
  * @author Matt Getz
  */
 public class Chess {

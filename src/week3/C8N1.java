@@ -3,7 +3,8 @@ package week3;
 import java.util.Scanner;
 
 /**
- *
+ * Read in user numbers into a multi-dimensional array. Print array. Sum and
+ * print the sum of each column.
  * @author Matt Getz
  */
 public class C8N1 {
@@ -59,8 +60,8 @@ public class C8N1 {
         int colNum = 1;
         for (int col = 0; col < largestRow; col++) {
             int sum = 0;
-            for (int row = 0; row < largestRow; row++) {
-                sum += x[row][col];
+            for (int row = 0; row < n; row++) {
+                sum += x[row][col];              
             }
             System.out.print("The sum of column " + colNum + " is: " + sum);
             colNum++;

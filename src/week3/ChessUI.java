@@ -66,6 +66,7 @@ public class ChessUI {
                 x++;
             }
         }
+        System.out.println("\n");
         System.out.println("Thanks for playing!");
     }
 }

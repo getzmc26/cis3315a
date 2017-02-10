@@ -11,7 +11,6 @@ public class ChessUI {
         Scanner sc = new Scanner(System.in);
         
         ChessBoard chess = new ChessBoard();
-        
         int x = chess.count;
         String y = chess.toString();
         int[] movement = new int[4];

@@ -12,58 +12,48 @@ public class ChessUI {
         
         ChessBoard chess = new ChessBoard();
         int x = chess.count;
-        String y = chess.toString();
-        int[] movement = new int[4];
+        int[] moveFrom = new int[2];
+        int[] moveTo = new int[2];
         
-        int stop = 1;
+        boolean endGame = false;
+        
         System.out.println(chess);
-        while (stop != 2) {
+        firstLoop:
+        while (endGame == false) {
             if (x % 2 == 0) {
-                System.out.print("Play a move = 1 , Quit = 2: ");
-                int end = sc.nextInt();
-                if (end == 1) {
-                    stop = 1;
-                }
-                else if (end == 2) {
-                    break;
-                }
-                else {
-                    System.out.println("Please enter a 1 or a 2.");
-                }
-                System.out.print("Player WHITE enter move from and move to: ");
-                for (int i=0; i<4; i++) {
-                    movement[i] = sc.nextInt();
-                }
-                System.out.println("Move from " + movement[0] + "," + movement[1] +
-                        " to " + movement[2] + "," + movement[3]);
-                chess.move(movement[0], movement[1], movement[2], movement[3]);
-                System.out.println("\n");
-                System.out.println(chess);
-                x++;
+                System.out.println("Turn player WHITE:");
             }
             else {
+                System.out.println("Turn player BLACK:");
+            }
+            while (true){
                 System.out.print("Play a move = 1 , Quit = 2: ");
-                int end = sc.nextInt();
-                if (end == 1) {
-                    stop = 1;
-                }
-                else if (end == 2) {
+                
+                if (sc.nextLine().equals("1")) {
                     break;
+                }
+                else if (sc.nextLine().equals("2")) {
+                    break firstLoop;
                 }
                 else {
                     System.out.println("Please enter a 1 or a 2.");
                 }
-                System.out.print("Player BLACK enter move from and move to: ");
-                for (int i=0; i<4; i++) {
-                    movement[i] = sc.nextInt();
-                }
-                System.out.println("Move from " + movement[0] + "," + movement[1] +
-                        " to " + movement[2] + "," + movement[3]);
-                chess.move(movement[0], movement[1], movement[2], movement[3]);
-                System.out.println("\n");
-                System.out.println(chess);
-                x++;
             }
+            System.out.print("Enter move from (ex. 1 0) : ");
+                for (int i=0; i<2; i++) {
+                    moveFrom[i] = sc.nextInt();
+                }
+            System.out.print("Enter move to (ex. 1 0) : ");
+                for (int i=0; i<2; i++) {
+                    moveTo[i] = sc.nextInt();
+                }
+            System.out.println("\n");    
+            System.out.println("Move from " + moveFrom[0] + "," + moveFrom[1] +
+                " to " + moveTo[0] + "," + moveTo[1]);
+            chess.move(moveFrom[0], moveFrom[1], moveTo[0], moveTo[1]);
+            System.out.println("\n");
+            System.out.println(chess);
+            x++;
         }
         System.out.println("\n");
         System.out.println("Thanks for playing!");

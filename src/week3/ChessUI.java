@@ -28,11 +28,11 @@ public class ChessUI {
             }
             while (true){
                 System.out.print("Play a move = 1 , Quit = 2: ");
-                
-                if (sc.nextLine().equals("1")) {
+                String ans = sc.next();
+                if (ans.equals("1")) {
                     break;
                 }
-                else if (sc.nextLine().equals("2")) {
+                else if (ans.equals("2")) {
                     break firstLoop;
                 }
                 else {

@@ -11,10 +11,20 @@ import java.util.Scanner;
 public class C11N4MaxValueInList {
 
     public static Integer max(ArrayList<Integer> x) {
-            java.util.Collections.sort(x);
-            return x.get(x.size() - 1);
+        java.util.Collections.sort(x);
+        return x.get(x.size() - 1);
     }
 
+//    public static Integer max(ArrayList<Integer> x) {
+//            int max = x.get(0);
+//            for (int i = 0; i<x.size(); i++) {
+//                if (x.get(i) > max) {
+//                    max = x.get(i);
+//                }
+//            }
+//        return max;    
+//    }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> x = new ArrayList<>();

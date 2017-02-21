@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * Asks user to create 5 lists. Reverses the order of the list and prints.
  * @author Matt Getz
  */
 public class C11N10MyStack {

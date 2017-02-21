@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * User inputs a list of numbers. List is sorted from smallest to largest.
  * @author Matt Getz
  */
 public class C11N11SortList {
 
     public static void sort(ArrayList<Integer> x) {
         java.util.Collections.sort(x);
-        System.out.print("The sorted ArrayList is: " + x + "\n");
+        System.out.print("The sorted list is: " + x);
     }
 
     public static void main(String[] args) {

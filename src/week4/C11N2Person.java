@@ -3,7 +3,8 @@ package week4;
 import java.time.LocalDate;
 
 /**
- *
+ * Creates a person object with a name, address, phone number, 
+ * and email address.
  * @author Matt Getz
  */
 public class C11N2Person {

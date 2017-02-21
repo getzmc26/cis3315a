@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * User enters a list of numbers. Numbers in list are summed together and the
+ * sum is printed out.
  * @author Matt Getz
  */
 public class C11N12SumList {

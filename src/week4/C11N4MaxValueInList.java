@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * User enters a list of numbers. The maximum value in the list is returned.
  * @author Matt Getz
  */
 public class C11N4MaxValueInList {

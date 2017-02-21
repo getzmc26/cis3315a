@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * Prompts user to enter to lists of numbers. List y is added to the end of 
+ * list x in a new list z.
  * @author Matt Getz
  */
 public class C11N14TwoLists {

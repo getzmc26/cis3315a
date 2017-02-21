@@ -5,17 +5,14 @@ import java.util.Scanner;
 
 /**
  * User enters a list of numbers. The maximum value in the list is returned.
+ *
  * @author Matt Getz
  */
 public class C11N4MaxValueInList {
 
     public static Integer max(ArrayList<Integer> x) {
-        if (x.isEmpty()) {
-            return null;
-        } else {
             java.util.Collections.sort(x);
             return x.get(x.size() - 1);
-        }
     }
 
     public static void main(String[] args) {

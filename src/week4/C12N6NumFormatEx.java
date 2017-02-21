@@ -7,7 +7,7 @@ import java.util.Scanner;
  * a hex number.
  * @author Matt Getz
  */
-public class C12N6NumberFormatException {
+public class C12N6NumFormatEx {
 
     public static int hexToDecimal(String hex) throws NumberFormatException {
         int decimalValue = 0;

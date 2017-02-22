@@ -21,11 +21,15 @@ public class C11N12SumList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> x = new ArrayList<>();
-        System.out.print("How many numbers are in your list?: ");
-        int numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            x.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                x.add(num);
+            }
         }
         System.out.println("\nYour list is: " + x);
         sum(x);

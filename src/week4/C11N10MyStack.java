@@ -24,48 +24,61 @@ public class C11N10MyStack {
         ArrayList<Integer> e = new ArrayList<>();
         int count = 1;
 
-        System.out.print("How many 'things' are in list " + count + " ?: ");
-        int numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            a.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                a.add(num);
+            }
         }
 
-        count++;
-        
-        System.out.print("How many 'things' are in list " + count + " ?: ");
-        numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            b.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                b.add(num);
+            }
         }
 
-        count++;
-        
-        System.out.print("How many 'things' are in list " + count + " ?: ");
-        numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            c.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                c.add(num);
+            }
         }
 
-        count++;
-        
-        System.out.print("How many 'things' are in list " + count + " ?: ");
-        numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            d.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                d.add(num);
+            }
         }
 
-        count++;
-        
-        System.out.print("How many 'things' are in list " + count + " ?: ");
-        numOfValues = sc.nextInt();
-        System.out.print("\nEnter the " + numOfValues + " number(s) that you want to add: ");
-        for (int i = 0; i < numOfValues; i++) {
-            e.add(sc.nextInt());
+        System.out.print("\nEnter the number(s) that you want to add and end with a zero: ");
+        while (sc.hasNext()) {
+            int num = sc.nextInt();
+            if (num == 0) {
+                break;
+            }
+            else {
+                e.add(num);
+            }
         }
+        
         System.out.println("\n");
         System.out.println("\nYour first list is: " + a);
         sort(a);

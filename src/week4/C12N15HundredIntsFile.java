@@ -18,7 +18,7 @@ public class C12N15HundredIntsFile {
     public static void main(String[] args) throws Exception {
         File file = new File("100RandInts.txt");
         if (file.exists()) {
-            System.out.println("File already exists");
+            System.out.println("File created");
             System.exit(0);
         }
         try (

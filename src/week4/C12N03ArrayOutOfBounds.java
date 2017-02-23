@@ -17,6 +17,7 @@ public class C12N03ArrayOutOfBounds {
         Random rand = new Random();
         int[] x = new int[101];
 
+        Outer:
         while (true) {
             System.out.print("Enter the index of an array: ");
             int indexChoice = sc.nextInt();
@@ -27,7 +28,7 @@ public class C12N03ArrayOutOfBounds {
                         System.out.println("The number at index " +
                                 indexChoice + " is: " + x[i]);
                         System.out.println("\n");
-                        break;
+                        break Outer;
                     }
                 }
             } else {

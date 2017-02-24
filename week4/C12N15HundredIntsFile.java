@@ -24,15 +24,15 @@ public class C12N15HundredIntsFile {
                 output.print("\n");
             }
         }
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> x = new ArrayList<>();
         try (Scanner sc = new Scanner(file);) {
             while (sc.hasNext()) {
-                list.add(sc.nextInt());
+                x.add(sc.nextInt());
             }
         }
-        System.out.println("Unsorted list: " + list.toString());
-        Collections.sort(list);
-        System.out.print("Sorted list: " + list.toString());
+        System.out.println("Unsorted list: " + x.toString());
+        Collections.sort(x);
+        System.out.print("Sorted list: " + x.toString());
         System.out.println();
     }
 }

@@ -21,18 +21,15 @@ public class C12N15HundredIntsFile {
             System.out.println("File created");
             System.exit(0);
         }
-        try (
-                PrintWriter output = new PrintWriter(file);) {
+        try (PrintWriter output = new PrintWriter(file);) {
             for (int i = 0; i < 100; i++) {
                 output.print(((int) (Math.random() * 1000) + 1));
                 output.print(" ");
                 output.print("\n");
-
             }
         }
         ArrayList<Integer> list = new ArrayList<>();
-        try (
-                Scanner sc = new Scanner(file);) {
+        try (Scanner sc = new Scanner(file);) {
             while (sc.hasNext()) {
                 list.add(sc.nextInt());
             }

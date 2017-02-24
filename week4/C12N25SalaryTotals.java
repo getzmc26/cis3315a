@@ -12,10 +12,10 @@ import java.util.Scanner;
  */
 public class C12N25SalaryTotals {
 
-    public static double getTotal(ArrayList<Double> list) {
+    public static double getTotal(ArrayList<Double> x) {
         double total = 0;
-        for (int i = 0; i < list.size(); i++) {
-            total += list.get(i);
+        for (int i = 0; i < x.size(); i++) {
+            total += x.get(i);
         }
         return total;
     }

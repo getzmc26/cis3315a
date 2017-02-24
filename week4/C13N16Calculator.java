@@ -8,7 +8,7 @@ import java.util.Scanner;
  * This is the not the solution the text wanted. But it will add, subtract,
  * multiply, and divide rational numbers.
  *
- * @author Matt
+ * @author Matt Getz
  */
 public class C13N16Calculator {
 

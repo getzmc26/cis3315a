@@ -4,9 +4,9 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * Create a rational-number calculator. Practice problem 7.9 is similar.
- * This is the not the solution the text wanted. But it will add, subtract,
- * multiply, and divide rational numbers.
+ * Create a rational-number calculator. Practice problem 7.9 is similar. This is
+ * the not the solution the text wanted. But it will add, subtract, multiply,
+ * and divide rational numbers.
  *
  * @author Matt Getz
  */
@@ -155,26 +155,9 @@ public class C13N16Calculator {
 
         C13N16Calculator c1 = new C13N16Calculator(a, b, c, d);
 
-        while (true) {
-            System.out.print("\nDo you want to add ('1'), subtract ('2'), multiply"
-                    + " ('3'), or divide ('4') these numbers?"
-                    + " (enter corresponding number): ");
-            int userChoice = sc.nextInt();
-            if (userChoice == 1) {
-                c1.add();
-                break;
-            } else if (userChoice == 2) {
-                c1.subtract();
-                break;
-            } else if (userChoice == 3) {
-                c1.mulitply();
-                break;
-            } else if (userChoice == 4) {
-                c1.divide();
-                break;
-            } else {
-                System.out.println("\nPlease enter a 1, 2, 3, or 4.");
-            }
-        }
+        c1.add();
+        c1.subtract();
+        c1.mulitply();
+        c1.divide();
     }
 }
